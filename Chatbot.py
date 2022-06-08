@@ -26,6 +26,8 @@ with open("intents.json") as file:
 try:
     with open("data.pickle", "rb") as f:
         words, labels, training, output = pickle.load(f)
+
+# If There Is No Existing Model A New One Is Trained
 except:
     words = []
     labels = []
@@ -97,7 +99,7 @@ net = tflearn.regression(net)
 model = tflearn.DNN(net)
 model.load("chatbot.tflearn")
 
-
+# Generate Response
 def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
 
@@ -110,7 +112,7 @@ def bag_of_words(s, words):
                 bag[i] = 1
     return numpy.array(bag)
 
-
+# Get User Input
 def get_audio():
     r = sr.Recognizer()
     with sr.Microphone() as source:
@@ -126,7 +128,7 @@ def get_audio():
 
     return said
 
-
+# Chatbot
 def chat():
     print("Start talking to the bot!")
     while True:
