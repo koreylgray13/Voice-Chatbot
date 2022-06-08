@@ -1,0 +1,35 @@
+{"intents": [
+      {"tag": "greetings",
+       "patterns": ["hey", "whats up", "hola", "how is it going", "what is up", "bonjour", "hello"],
+       "responses": ["How's it going?", "Hey!", "What's up?", "What can I do for you sir?"]
+      },
+      {"tag": "show_todo",
+       "patterns": ["checklist", "whats on my to do list", "to do"],
+       "responses": ["Retrieving TODO Checklist...", "Getting That Ready Now", "One moment sir", "Here you go sir"]
+      },
+      {"tag": "calculator",
+       "patterns": ["lets do some math", "show me the calculator", "math"],
+       "responses": ["Retrieving Calculator...", "Getting That Ready Now", "One moment sir", "Here you go sir"]
+      },
+      {"tag": "show_budget",
+       "patterns": ["budget", "whats my money look like", "personal finance", "show me my budget"],
+       "responses": ["Retrieving Personal Budget...", "Getting That Ready Now", "One moment sir", "Here you go sir"]
+      },
+      {"tag": "password_manager",
+       "patterns": ["pm", "passwords", "manage passwords", "password manager", "what's my password?"],
+       "responses": ["Retrieving Password Manager...", "Getting That Ready Now", "One moment sir", "Here you go sir"]
+      },
+      {"tag": "calculator",
+       "patterns": ["lets do some math", "calculations", "math"],
+       "responses": ["Retrieving Calculator...", "Getting That Ready Now", "One moment sir", "Here you go sir"]
+       },
+      {"tag": "goodbye",
+       "patterns": ["adios amigo", "see ya", "later alligator", "in a while crocodile", "bye bye", "adios", "later", "peace out"],
+       "responses": ["adios amigo", "see ya", "later alligator", "in a while crocodile", "adios", "later", "peace out"]
+       },
+      {"tag": "name",
+       "patterns": ["what is your name?", "who are you", "what do I call you? "],
+       "responses": ["I am Gideon", "My name is Gideon sir", "You can call me Gideon"]
+      }
+  ]
+}
